@@ -661,102 +661,119 @@
 </section>
 
 <!-- GRAMMAR -->
-<section class="grammar" id="grammar">
-  <span class="section-tag">Grammar Guide</span>
-  <h2 class="section-title">Essential English Grammar</h2>
-  <p class="section-desc">A quick reference to the most important grammar rules I teach. Click any topic to explore.</p>
-  <div class="grammar-tabs">
-    <button class="tab-btn active" onclick="showTab('tenses', this)">Tenses</button>
-    <button class="tab-btn" onclick="showTab('articles', this)">Articles</button>
-    <button class="tab-btn" onclick="showTab('prepositions', this)">Prepositions</button>
-    <button class="tab-btn" onclick="showTab('conditionals', this)">Conditionals</button>
-    <button class="tab-btn" onclick="showTab('voice', this)">Active vs Passive</button>
-  </div>
-  <div class="grammar-content active" id="tab-tenses">
-    <h3>English Tenses — The 12 Forms</h3>
-    <p>Tenses tell us <em>when</em> an action happens. English has 12 main tenses across three time frames: Past, Present, and Future — each with Simple, Continuous, Perfect, and Perfect Continuous forms.</p>
-    <div class="example-box">
-      <div class="label">Examples</div>
-      <p><em>Simple Present:</em> She <em>teaches</em> English every day.</p>
-      <p><em>Present Continuous:</em> She <em>is teaching</em> right now.</p>
-      <p><em>Present Perfect:</em> She <em>has taught</em> over 200 students.</p>
-      <p><em>Past Simple:</em> She <em>taught</em> a class yesterday.</p>
-      <p><em>Future Simple:</em> She <em>will teach</em> a new batch next month.</p>
+<section id="grammar" class="grammar reveal">
+  <span class="section-tag">Essential Rules</span>
+  <h2 class="section-title">Master the Fundamentals</h2>
+  <p class="section-desc">Understand how English structures work in practical, everyday usage. Click on any topic below to learn more.</p>
+
+  <div class="accordion-container">
+
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)">
+        <h3><span>⏳</span> Tenses</h3>
+        <span class="accordion-icon">▼</span>
+      </button>
+      <div class="accordion-content">
+        <p>The temporal backbone of English communication—knowing when things happen clarifies your message.</p>
+        <div class="example-box">
+          <div class="label">Quick Examples</div>
+          <p><strong>Past Simple:</strong> I <em>visited</em> the client yesterday.</p>
+          <p><strong>Present Perfect:</strong> I <em>have finished</em> the report just now.</p>
+          <p><strong>Future Continuous:</strong> We <em>will be flying</em> to New York tomorrow night.</p>
+        </div>
+        <ul class="rules-list">
+          <li><strong>Simple Tenses:</strong> Describe permanent states or completed actions.</li>
+          <li><strong>Continuous Tenses:</strong> Emphasize ongoing or temporary situations.</li>
+          <li><strong>Perfect Tenses:</strong> Relate two times together (e.g., past to present).</li>
+        </ul>
+      </div>
     </div>
-    <ul class="rules-list">
-      <li>Use <strong>Simple Present</strong> for habits, facts, and routines.</li>
-      <li>Use <strong>Present Continuous</strong> for actions happening right now or temporary situations.</li>
-      <li>Use <strong>Present Perfect</strong> to link the past with the present — an action whose effect is still felt.</li>
-      <li>Use <strong>Past Simple</strong> for completed actions at a specific time in the past.</li>
-      <li>Use <strong>Future Simple (will)</strong> for decisions made at the moment of speaking or predictions.</li>
-    </ul>
-  </div>
-  <div class="grammar-content" id="tab-articles">
-    <h3>Articles — A, An, The</h3>
-    <p>Articles are small but mighty words that determine whether we're talking about something specific or general. Getting them right instantly improves the quality of your English.</p>
-    <div class="example-box">
-      <div class="label">Examples</div>
-      <p><em>A:</em> I saw <em>a</em> dog in the park. (any dog — first mention)</p>
-      <p><em>An:</em> She is <em>an</em> English teacher. (used before vowel sounds)</p>
-      <p><em>The:</em> <em>The</em> dog I saw was very friendly. (specific, already known)</p>
-      <p><em>No article:</em> <em>Water</em> is essential for life. (uncountable nouns in general)</p>
+
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)">
+        <h3><span>📝</span> Articles</h3>
+        <span class="accordion-icon">▼</span>
+      </button>
+      <div class="accordion-content">
+        <p>Tiny words that have a huge impact on whether your ideas are perceived as general or specific.</p>
+        <div class="example-box">
+          <div class="label">Quick Examples</div>
+          <p>Can you pass me <em>a</em> pen? <em>(Any pen)</em></p>
+          <p>Can you pass me <em>the</em> pen? <em>(A specific pen we both see)</em></p>
+          <p>We need to talk about <em>_</em> teamwork. <em>(General concept - no article)</em></p>
+        </div>
+        <ul class="rules-list">
+          <li>Use <strong>A / An</strong> for non-specific, singular countable nouns.</li>
+          <li>Use <strong>The</strong> when the listener knows exactly which item you are talking about.</li>
+          <li>Use <strong>No Article</strong> for general plurals or uncountable concepts.</li>
+        </ul>
+      </div>
     </div>
-    <ul class="rules-list">
-      <li>Use <strong>a</strong> before consonant sounds, <strong>an</strong> before vowel sounds — it's about the sound, not the spelling.</li>
-      <li>Use <strong>the</strong> when both speaker and listener know which specific thing is being discussed.</li>
-      <li>Use <strong>no article</strong> with plural countable nouns and uncountable nouns used in a general sense.</li>
-      <li>Countries, languages, and proper nouns generally don't take articles (e.g., <em>Nepal, English, Samir</em>).</li>
-    </ul>
-  </div>
-  <div class="grammar-content" id="tab-prepositions">
-    <h3>Prepositions — In, On, At &amp; More</h3>
-    <p>Prepositions show relationships between words — time, place, direction, and manner. They're one of the trickiest parts of English, but patterns make them manageable.</p>
-    <div class="example-box">
-      <div class="label">Time Prepositions</div>
-      <p><em>At:</em> at 7 PM, at noon, at night</p>
-      <p><em>On:</em> on Monday, on 25 April, on my birthday</p>
-      <p><em>In:</em> in April, in 2026, in the morning</p>
+
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)">
+        <h3><span>📍</span> Prepositions</h3>
+        <span class="accordion-icon">▼</span>
+      </button>
+      <div class="accordion-content">
+        <p>The connectors of location, time, and direction that make sentences logical.</p>
+        <div class="example-box">
+          <div class="label">Quick Examples</div>
+          <p>I will meet you <em>at</em> 3 PM <em>on</em> Monday <em>in</em> the boardroom.</p>
+          <p>Let's focus <em>on</em> our primary targets.</p>
+          <p>She walked <em>into</em> the room without hesitation.</p>
+        </div>
+        <ul class="rules-list">
+          <li><strong>At / On / In:</strong> Range from highly specific moments/places to broad contexts.</li>
+          <li>Use <strong>At</strong> for specific times (at 9:00 AM) and precise points (at the door).</li>
+          <li>Use <strong>On</strong> for days/dates (on Tuesday) and surfaces (on the table).</li>
+          <li>Use <strong>In</strong> for longer periods (in July) and enclosed spaces (in the office).</li>
+        </ul>
+      </div>
     </div>
-    <ul class="rules-list">
-      <li><strong>At</strong> is used for precise times and specific places (at the station, at school).</li>
-      <li><strong>On</strong> is used for days, dates, and surfaces (on the table, on the wall).</li>
-      <li><strong>In</strong> is used for months, years, parts of the day, and enclosed spaces (in the room).</li>
-      <li><strong>For</strong> indicates duration (for 3 hours), <strong>since</strong> indicates a starting point (since Monday).</li>
-    </ul>
-  </div>
-  <div class="grammar-content" id="tab-conditionals">
-    <h3>Conditional Sentences — If Clauses</h3>
-    <p>Conditionals express what will or would happen under certain conditions. There are four main types, each conveying different levels of possibility or reality.</p>
-    <div class="example-box">
-      <div class="label">The Four Conditionals</div>
-      <p><em>Zero:</em> If you heat water to 100°C, it <em>boils</em>. (always true)</p>
-      <p><em>First:</em> If it rains, I <em>will stay</em> home. (real possibility)</p>
-      <p><em>Second:</em> If I <em>had</em> more time, I <em>would travel</em>. (hypothetical)</p>
-      <p><em>Third:</em> If she <em>had studied</em>, she <em>would have passed</em>. (past regret)</p>
+
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)">
+        <h3><span>🔀</span> Conditionals</h3>
+        <span class="accordion-icon">▼</span>
+      </button>
+      <div class="accordion-content">
+        <p>Hypothetical phrasing that allows you to discuss consequences, possibilities, and outcomes.</p>
+        <div class="example-box">
+          <div class="label">Quick Examples</div>
+          <p><strong>First Conditional:</strong> If it rains, we <em>will stay</em> inside.</p>
+          <p><strong>Second Conditional:</strong> If I won the lottery, I <em>would buy</em> a house.</p>
+          <p><strong>Third Conditional:</strong> If we had started early, we <em>would have met</em> the deadline.</p>
+        </div>
+        <ul class="rules-list">
+          <li><strong>Zero & First:</strong> Real-world situations, certainties, and highly likely outcomes.</li>
+          <li><strong>Second Conditional:</strong> Imagined or highly unlikely scenarios in the present or future.</li>
+          <li><strong>Third Conditional:</strong> Regrets or hypothetical realities completely in the past.</li>
+        </ul>
+      </div>
     </div>
-    <ul class="rules-list">
-      <li><strong>Zero Conditional:</strong> If + present simple → present simple. For universal truths.</li>
-      <li><strong>First Conditional:</strong> If + present simple → will + infinitive. For likely future events.</li>
-      <li><strong>Second Conditional:</strong> If + past simple → would + infinitive. For unlikely or imaginary situations.</li>
-      <li><strong>Third Conditional:</strong> If + past perfect → would have + past participle. For impossible past scenarios.</li>
-    </ul>
-  </div>
-  <div class="grammar-content" id="tab-voice">
-    <h3>Active vs Passive Voice</h3>
-    <p>Voice tells us whether the subject is doing the action (active) or receiving it (passive). Both are important — knowing when to use each makes your writing clear and varied.</p>
-    <div class="example-box">
-      <div class="label">Active vs Passive</div>
-      <p><em>Active:</em> Samir <em>teaches</em> the students. (Subject does the action)</p>
-      <p><em>Passive:</em> The students <em>are taught</em> by Samir. (Subject receives the action)</p>
-      <p><em>Active:</em> Someone <em>stole</em> the car.</p>
-      <p><em>Passive:</em> The car <em>was stolen</em>.</p>
+
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)">
+        <h3><span>🔄</span> Active vs Passive</h3>
+        <span class="accordion-icon">▼</span>
+      </button>
+      <div class="accordion-content">
+        <p>Switching your focus from the person performing the action to the action itself alters the tone.</p>
+        <div class="example-box">
+          <div class="label">Quick Examples</div>
+          <p><strong>Active:</strong> Our team <em>sent</em> the proposal. <em>(Strong, clear, dynamic)</em></p>
+          <p><strong>Passive:</strong> The proposal <em>was sent</em> by our team. <em>(Formal, neutral, passive)</em></p>
+          <p><strong>Passive (No Agent):</strong> The error <em>was corrected</em>. <em>(Objective or diplomatic)</em></p>
+        </div>
+        <ul class="rules-list">
+          <li><strong>Active Voice:</strong> Direct, clear, and highlights accountability. Best for standard writing.</li>
+          <li><strong>Passive Voice:</strong> Softens the action or emphasizes the result when the subject isn't important.</li>
+          <li>Essential for objective reports, academic findings, and polite customer feedback.</li>
+        </ul>
+      </div>
     </div>
-    <ul class="rules-list">
-      <li>Passive voice is formed with: <strong>be (in the right tense) + past participle</strong>.</li>
-      <li>Use active voice for most situations — it's clearer and more direct.</li>
-      <li>Use passive voice when the doer is unknown, unimportant, or when you want to emphasise the action or object.</li>
-      <li>In formal and scientific writing, passive voice is commonly used to sound objective.</li>
-    </ul>
+
   </div>
 </section>
 
